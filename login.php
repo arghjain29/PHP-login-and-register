@@ -33,9 +33,9 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
             $utype = $row['role'];
             
             if ($utype == 'user') {
-                header('location:./User/home.php');
+                header('location:./User/dashboard.php');
             } else if ($utype == 'admin') {
-                header('location:./Admin/home.php');
+                header('location:./Admin/dashboard.php');
             }
         } else {
             // Password is incorrect
